@@ -1,23 +1,30 @@
+html {
+    background-color: #013c31;
+}
+
+
 form {
     width: 100%;
     height: 400px;
     display: flex;
     justify-items: center;
     align-items: center;
-    justify-self: center;
-}
+    justify-self: center;}
 
 div label {
     display: block;
+    margin-left: 5px;
 }
 
 div input {
     height: 30px;
-    width: 250px;
+    width: 300px;
     border-radius: 10px;
     border-style: hidden;
     display: block;
     font-size: 16px;
+    padding: 5px 10px;
+    background-color: rgb(207, 207, 207);
 }
 
 div h1{
@@ -27,20 +34,17 @@ div h1{
 }
 
 div {
-    background-color: #013c31;
+    background-color: white;
     margin: auto;
-    color: rgb(221, 221, 221);
+    color: #013c31;
     padding: 40px 40px 100px;
     border-radius: 20px;
     font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button, a {
-    float: right;
-}
-
 a {
+    display: block;
     border: none;
     background-color: white;
     border-radius: 5px;
@@ -54,14 +58,23 @@ a {
 
 button {
     border: none;
-    background-color: white;
+    font-weight: bolder;
+    background-color: #013c31;
     border-radius: 5px;
-    height: 25px;
+    height: 40px;
+    width: 100%;
     font-size: 16px;
-    color: rgb(83, 83, 83);
+    color: rgb(207, 207, 207);
     margin-right: 4px;
+    margin-bottom: 10px;
+    transition: 0.5s;
 }
 
 input:focus {
     outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+    border-bottom: 4px solid #ff7505;
 }
