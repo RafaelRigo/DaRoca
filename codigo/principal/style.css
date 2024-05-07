@@ -124,3 +124,68 @@ nav {
     background: var(--color-second);
     color: var(--color-black-second);
 }
+
+main #buscar img{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-self: center;
+    vertical-align: auto;
+    margin-left: 5px;
+}
+
+main #buscar {
+    border-radius: 8px;
+    background-color: rgb(207, 207, 207);
+    width: 700px;
+    height: 40px;
+    display: flex;
+    border: 2px solid #013C31;
+    margin: auto;
+}
+
+main #txt-buscar{
+    width: 100%;
+    float: left;
+    border: none;
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+main #bt-buscar{
+    border: none;
+    background-color: #013C31;
+    color: white;
+    font-size: 18px;
+}
+
+main #bt-buscar:hover{
+    cursor: pointer;
+    background-color: #FF7505;
+}
+
+main #bt-buscar:hover #buscar{
+    border: 2px solid #FF7505
+}
+
+main #txt-buscar:focus{
+    outline: none;
+}
+
+main img {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+main p{
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    color: rgb(66, 66, 66);
+    margin-bottom: 30px;
+    margin-top: -20px;
+    font-family: var(--font);    
+}
