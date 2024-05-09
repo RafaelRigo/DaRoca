@@ -30,11 +30,20 @@
             <input type="text" placeholder="buscar..." id="txt-buscar">
             <button id="bt-buscar">buscar</button>
         </div>
-        <div id="produtos">
-            <div id="verdura">verduras<input type="radio" name="produto"></div>
-            <div id="fruta">frutas<input type="radio" name="produto" ></div>
-            <div id="legume">legume<input type="radio" name="produto" ></div>
-        </div>
+        <ul id="produtos">
+            <li>
+                <input id="verdura" type="radio" name="produto" checked="checked">
+                <label for="verdura">Verduras</label>
+            </li>
+            <li>
+                <input id="fruta" type="radio" name="produto" >
+                <label for="fruta">Frutas</label>
+            </li>
+            <li>
+                <input id="legume" type="radio" name="produto" >
+                <label for="legume">Legumes</label>
+            </li>
+        </ul>
     </main>
 </body>
 </html>
