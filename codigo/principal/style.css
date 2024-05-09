@@ -129,6 +129,10 @@ nav {
     color: var(--color-black-second);
 }
 
+main {
+    color: #3A4042;
+}
+
 main #buscar img{
     width: 25px;
     height: 25px;
@@ -162,6 +166,7 @@ main #bt-buscar{
     background-color: #013C31;
     color: white;
     font-size: 18px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 main #bt-buscar:hover{
@@ -184,7 +189,7 @@ main img {
     justify-content: center;
 }
 
-main p{
+main .msg{
     text-align: center;
     margin: auto;
     font-size: 24px;
@@ -205,6 +210,7 @@ main p{
     margin: 10px;
     font-family: var(--font);
     margin-bottom: 10px;
+    font-weight: 350;
 }
 
 #produtos label, #produtos input {
@@ -236,8 +242,8 @@ main p{
     list-style: none;
 }
 input[name="produto"]:checked+label, .Checked+label {
-    background-color: #013c3156;
-    border-bottom: none;
+    color: #FF7505;
+    background-color: #ff760509;
 }
 
 #mercadoria {
@@ -247,20 +253,25 @@ input[name="produto"]:checked+label, .Checked+label {
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
+    border-radius: 5px;
 }
 
 .it {
     background-color: white;
-    width: 24%;
+    width: 23%;
     height: 400px;
-    margin: 0.5%;
+    margin: 1%;
 }
 
 .img {
     width: 100%;
     background-color: #013C31;
     height: 250px;
+    max-width: 100%;
+    max-height: 100%;
 }
+
+
 
 /* .info{
     background-color: #FF7505;
@@ -277,6 +288,10 @@ input[name="produto"]:checked+label, .Checked+label {
     font-size: 17px;
 }
 
+.add:active {
+    background-color: #013C31;
+}
+
 .qtd {
     border-radius: 200px;
     width: 25px;
@@ -289,6 +304,38 @@ input[name="produto"]:checked+label, .Checked+label {
     margin: 2px 5px;
 }
 
-h2, h3 {
+.info p{
+    display: inline;
+    font-size: 20px;
+}
+
+.info h2, h3 {
     margin-left: 5px;
+}
+
+#sobre-nos {
+    width: 80%;
+    margin: auto;
+    font-family: var(--font);
+}
+
+#sobre-nos h2 {
+    font-size: 45px;
+}
+
+#sobre-nos p {
+    font-size: 21px;
+}
+
+#sn1, #sn2 {
+    background-color: #013C31;
+    color:  white;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+#sn1 img{
+    float: left;
+    display: inline;
 }

@@ -24,7 +24,7 @@
     </header>
     <main>
         <img src="../../imagens/logo_texto.png" style="margin-top: 20px"> 
-        <p>Conectando você diretamente com a natureza, entregando saúde e sabor em cada caixa!</p>
+        <p class="msg">Conectando você diretamente com a natureza, entregando saúde e sabor em cada caixa!</p>
         <div id="buscar">
             <img src="../../imagens/procurar.png">
             <input type="text" placeholder="buscar..." id="txt-buscar">
@@ -47,10 +47,48 @@
         </ul>
 
         <div id="mercadoria">
-            <div class="it"><div class="img"></div><div class="info"><h2>Banana nanica - 300g</h2>
-                <h3>R$ 10,00</h3><button class="qtd">+</button>1<button class="qtd">-</button><button class="add">adicionar</button></div></div>
+            <div class="it"><img class="img" src="../../imagens/banana.jpg"><div class="info"><h2>Banana nanica - 300g</h2>
+                <h3>R$ 10,00</h3><button class="qtd" onclick="somar('cont')">+</button><p class="cont">1</p><button class="qtd" onclick="sub('cont')">-</button><button class="add">adicionar</button></div></div>
+            <div class="it"><img class="img" src="../../imagens/cerejas.jpg"><div class="info"><h2>Cereja - 100g</h2>
+                <h3>R$ 7,00</h3><button class="qtd" onclick="somar('cont1')">+</button><p class="cont1">1</p><button class="qtd" onclick="sub('cont1')">-</button><button class="add">adicionar</button></div></div>
+            <div class="it"><img class="img" src="../../imagens/batata.webp"><div class="info"><h2>Batata inglesa - 100g</h2>
+                <h3>R$ 14,00</h3><button class="qtd" onclick="somar('cont2')">+</button><p class="cont2">1</p><button class="qtd" onclick="sub('cont2')">-</button><button class="add">adicionar</button></div></div>
+            <div class="it"><img class="img" src="../../imagens/batata-doce.jpg"><div class="info"><h2>Batata doce - 200g</h2>
+                <h3>R$ 16,00</h3><button class="qtd" onclick="somar('cont2')">+</button><p class="cont2">1</p><button class="qtd" onclick="sub('cont2')">-</button><button class="add">adicionar</button></div></div>
+        </div>
+
+        <div id="sobre-nos">
+            <h2>Sobre nós</h2>
+            <p>Em 2019, a jovem Nathália, movida pela paixão pelo campo e pela praticidade da vida moderna, fundou a DaRoça. A proposta da DaRoça é entregar produtos frescos na casa do cliente.</p>
+            <p>O  negócio  funciona  no  modelo  de  recorrência.  O  cliente entrada no site, escolhe os produtos que deseja receber, qual  a  frequência  -  semanal,  quinzenal  ou  mensal  -  e  o melhor dia para receber sua entrega. </p>
+            <p>Quando  o  pedido  do  cliente  chega,  os  produtos  são separados  e  encaixotados  durante  a  madrugada  para serem entregues no dia seguinte. As caixas para entrega são  térmicas  e  foram  desenvolvidas  pela  Klabin  para  a DaRoça. Já o transporte é feito em veículos pequenos e climatizados,  que  ficam  no  máximo  seis  horas  com  os produtos.</p>
+            
+            <div id="sn1">
+            <img src="../../imagens/imagem-pedido-celular.png">
+            <p>Os clientes se cadastram em poucos passos, escolhe seus produtos favoritos que comporão a sua cesta e decide se a frequência da entrega será semanal, quizenal ou mensal.</p>
+            </div>
+
+            <div id="sn2">
+                <p>Separamos as cestas durante a madrugada em um dos nossos centros de distribuição com o cuidado e atenção que o nossos clientes merecem.</p>
+                <img src="../../imagens/imagem-caixas-verifica.png">
+            </div>
+        
         
         </div>
     </main>
+    <script>
+        var c = 1
+        function somar(classe){
+            c += 1
+            document.querySelector('.'+classe).innerHTML = c
+        }
+
+        function sub(classe){
+            if (c > 1){
+                c -= 1
+            }
+            document.querySelector('.'+classe).innerHTML = c
+        }
+    </script>
 </body>
 </html>
