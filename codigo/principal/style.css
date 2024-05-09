@@ -254,6 +254,7 @@ input[name="produto"]:checked+label, .Checked+label {
     align-content: flex-start;
     flex-wrap: wrap;
     border-radius: 5px;
+    padding: 10px 0px 100px;
 }
 
 .it {
