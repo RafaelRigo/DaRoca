@@ -15,6 +15,10 @@ header {
     width: 100%;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     padding: 0px 10px;
@@ -194,10 +198,10 @@ main p{
     width: 200px;
     height: 25px;
     font-size: 22px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     border-radius: 20px;
-    border: 2px solid #013C31;
+    border: 0.1px solid rgb(204, 204, 204);
     margin: 10px;
     font-family: var(--font);
     margin-bottom: 10px;
@@ -232,14 +236,59 @@ main p{
     list-style: none;
 }
 input[name="produto"]:checked+label, .Checked+label {
-    background-color: var(--color-second);
-    color: white;
+    background-color: #013c3156;
     border-bottom: none;
 }
 
 #mercadoria {
-    border: 2px solid #013C31;
+    background-color: rgb(207, 207, 207);
     width: 80%;
     margin: auto;
-    height: 900px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.it {
+    background-color: white;
+    width: 24%;
+    height: 400px;
+    margin: 0.5%;
+}
+
+.img {
+    width: 100%;
+    background-color: #013C31;
+    height: 250px;
+}
+
+/* .info{
+    background-color: #FF7505;
+} */
+
+.add {
+    float: right;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #FF7505;
+    color: white;
+    border: none;
+    margin-right: 5px;
+    font-size: 17px;
+}
+
+.qtd {
+    border-radius: 200px;
+    width: 25px;
+    height: 25px;
+    font-family: var(--font);
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(207, 207, 207);
+    margin: 2px 5px;
+}
+
+h2, h3 {
+    margin-left: 5px;
 }
