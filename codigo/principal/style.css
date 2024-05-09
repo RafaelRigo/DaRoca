@@ -196,8 +196,11 @@ main p{
     font-size: 22px;
     padding: 20px;
     text-align: center;
-    border-radius: 20px 10px 0px 0px;
+    border-radius: 20px;
     border: 2px solid #013C31;
+    margin: 10px;
+    font-family: var(--font);
+    margin-bottom: 10px;
 }
 
 #produtos label, #produtos input {
@@ -218,6 +221,7 @@ main p{
     height: 0;
     visibility: hidden;
     margin: 0;
+    padding: 0px;
 }
 
 #produtos {
@@ -231,4 +235,11 @@ input[name="produto"]:checked+label, .Checked+label {
     background-color: var(--color-second);
     color: white;
     border-bottom: none;
+}
+
+#mercadoria {
+    border: 2px solid #013C31;
+    width: 80%;
+    margin: auto;
+    height: 900px;
 }
