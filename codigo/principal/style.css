@@ -258,7 +258,7 @@ input[name="produto"]:checked+label, .Checked+label {
 
 .it {
     background-color: white;
-    width: 20%;
+    width: 21.04%;
     height: 350px;
     margin: 1%;
     padding: 10px;
@@ -319,7 +319,6 @@ article {
     width: 78%;
     margin: 100px auto;
     font-family: var(--font);
-    padding: 50px;
 }
 
 article h2 {
