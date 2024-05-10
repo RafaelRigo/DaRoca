@@ -316,7 +316,7 @@ input[name="produto"]:checked+label, .Checked+label {
 }
 
 article {
-    width: 80%;
+    width: 78%;
     margin: 100px auto;
     font-family: var(--font);
     padding: 50px;
