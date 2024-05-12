@@ -10,7 +10,7 @@
 
 header {
     display: flex;
-    height: 70px;
+    height: 80px;
     background-color: var(--color-second);
     width: 100%;
 }
@@ -350,5 +350,34 @@ article h2 {
 
 #sv1 img{
     float: left;
+    display: inline;
+}
+
+footer {
+    background-color: #013C31;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 6px solid #FF7505;
+    border-bottom: 6px solid #FF7505;
+}
+
+footer img {
+    width: 50px;
+}
+
+.tit {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    font-size: 20px;
+    color: rgb(223, 223, 223);
+    font-family: var(--font);
+}
+
+.contato {
     display: inline;
 }
