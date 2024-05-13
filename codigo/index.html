@@ -113,23 +113,6 @@
     </footer>
 
     <script>
-        var c = 1
-        function reset(){
-            c = 1
-        }
-
-        function somar(classe){
-            c += 1
-            document.querySelector('.'+classe).innerHTML = c
-        }
-
-        function sub(classe){
-            if (c > 1){
-                c -= 1
-            }
-            document.querySelector('.'+classe).innerHTML = c
-        }
-
         function buscar(){
             window.location.href = 'produtos/produtos.html';
             let prod = document.getElementById('txt-buscar').value
