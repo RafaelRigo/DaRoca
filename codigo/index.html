@@ -27,8 +27,8 @@
         <p class="msg">Conectando você diretamente com a natureza, entregando saúde e sabor em cada caixa!</p>
         <div id="buscar">
             <img src="../imagens/procurar.png">
-            <input type="text" placeholder="buscar produto..." id="txt-buscar">
-            <button id="bt-buscar">buscar</button>
+            <input type="text" placeholder="buscar produto..." id="txt-buscar" onsubmit="buscar()">
+            <button id="bt-buscar" onclick="buscar()">buscar</button>
         </div>
 
         <article id="sobre-nos">
@@ -94,17 +94,17 @@
             <li><a href="#">DaRoca</a></li>
             <li><a href="#">CTC</a></li>
         </ul>
-        <ul>
+        <ul >
             <li class="tit">Empresas envolvidas:</li>
 
             <li><a href="#">Klabin</a></li>
             <li><a href="#">CPJ delivery</a></li>
             <li><a href="#">Farm center</a></li>
         </ul>
-        <ul>
+        <ul class="contact" >
             <li class="tit">Formas de contato:</li>
 
-            <li class="contato"><a href="#"><img src="../imagens/gmail.png"></a></li>
+            <li class="contato"><a href="#"><img src="../imagens/mail.png"></a></li>
             <li class="contato"><a href="#"><img src="../imagens/instagram.png"></a></li>
             <li class="contato"><a href="#"><img src="../imagens/youtube.png"></a></li>
             <li class="contato"><a href="#"><img src="../imagens/twitter.png"></a></li>
@@ -129,6 +129,18 @@
             }
             document.querySelector('.'+classe).innerHTML = c
         }
+
+        function buscar(){
+            window.location.href = 'produtos/produtos.html';
+            let prod = document.getElementById('txt-buscar').value
+        }
+        document.getElementById("txt-buscar").addEventListener("keypress", function(event) {
+            // Verificar se a tecla pressionada é Enter (código 13)
+            if (event.key === "Enter") {
+                // Redirecionar para o site desejado
+                window.location.href = "produtos/produtos.html";
+                }
+        });
     </script>
 </body>
 </html>
