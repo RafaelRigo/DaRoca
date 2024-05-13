@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Da Roça - Produtos</title>
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="menu">
+                <li><a href="/codigo/index.html"><img src="/imagens/logoDaRoca.png" alt=""></a></li>
+                <li><a class="menu-item" href="#">Sobre Nós</a></li>
+                <li><a class="menu-item" href="#">Produtos</a></li>
+                <li><a class="menu-item" href="#">Serviços</a></li>
+            </ul>
+            <div id="login-cadastro">
+                <a id="cadastro" href="/codigo/cadastro/cadastro.html">Cadastrar-se</a>
+                <a id="login" href="/codigo/login/login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="buscar">
+            <img src="../../imagens/procurar.png">
+            <input type="text" placeholder="buscar produto..." id="txt-buscar">
+            <button id="bt-buscar">buscar</button>
+        </div>
+
+        <ul id="produtos" style="padding: 0">
+            <li>
+                <input id="verdura" type="checkbox" name="produto" checked="checked">
+                <label for="verdura">Verduras</label>
+            </li>
+            <li>
+                <input id="fruta" type="checkbox" name="produto" checked="checked">
+                <label for="fruta">Frutas</label>
+            </li>
+            <li>
+                <input id="legume" type="checkbox" name="produto" checked="checked">
+                <label for="legume">Legumes</label>
+            </li>
+        </ul>
+        <div id="mercadoria">
+            <div class="it"><img class="img" src="../../imagens/banana.jpg"><div class="info"><h2>Banana nanica - 300g</h2>
+                <h4>Fruta</h4>
+                <h3>R$ 10,00</h3><button class="qtd" onclick="somar('cont')">+</button><p class="cont">1</p><button class="qtd" onclick="sub('cont')">-</button><button class="add" onclick="reset()">adicionar</button></div></div>
+            <div class="it"><img class="img" src="../../imagens/cerejas.jpg"><div class="info"><h2>Cereja - 100g</h2>
+                <h4>Fruta</h4>
+                <h3>R$ 7,00</h3><button class="qtd" onclick="somar('cont1')">+</button><p class="cont1">1</p><button class="qtd" onclick="sub('cont1')">-</button><button class="add" onclick="reset()">adicionar</button></div></div>
+            <div class="it"><img class="img" src="../../imagens/batata.webp"><div class="info"><h2>Batata inglesa - 100g</h2>
+                <h4>Legume</h4>
+                <h3>R$ 14,00</h3><button class="qtd" onclick="somar('cont2')">+</button><p class="cont2">1</p><button class="qtd" onclick="sub('cont2')">-</button><button class="add" onclick="reset()">adicionar</button></div></div>
+            <div class="it"><img class="img" src="../../imagens/batata-doce.jpg"><div class="info"><h2>Batata doce - 200g</h2>
+                <h4>Legume</h4>
+                <h3>R$ 16,00</h3><button class="qtd" onclick="somar('cont3')">+</button><p class="cont3">1</p><button class="qtd" onclick="sub('cont3')">-</button><button class="add" onclick="reset()">adicionar</button></div></div>
+            <div class="it"><img class="img" src="../../imagens/abobrinha.jpg"><div class="info"><h2>Abobrinha - 100g</h2>
+                <h4>Legume</h4>
+                <h3>R$ 8,00</h3><button class="qtd" onclick="somar('cont4')">+</button><p class="cont4">1</p><button class="qtd" onclick="sub('cont4')">-</button><button class="add" onclick="reset()">adicionar</button></div></div>
+            <div class="it"><img class="img" src="../../imagens/tomate.webp"><div class="info"><h2>Tomate italiano - 50g</h2>
+                <h4>Fruta</h4>
+                <h3>R$ 10,00</h3><button class="qtd" onclick="somar('cont5')">+</button><p class="cont5">1</p><button class="qtd" onclick="sub('cont5')">-</button><button class="add" onclick="reset()">adicionar</button></div></div>
+            <div class="it"><img class="img" src="../../imagens/abacaxi.jpg"><div class="info"><h2>Abacaxi - 1 unidade</h2>
+                <h4>Fruta</h4>
+                <h3>R$ 20,00</h3><button class="qtd" onclick="somar('cont6')">+</button><p class="cont6">1</p><button class="qtd" onclick="sub('cont6')">-</button><button class="add" onclick="reset()">adicionar</button></div></div>
+
+        </div>
+    </main>
+    
+</body>
+</html>

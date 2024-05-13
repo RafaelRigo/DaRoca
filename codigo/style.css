@@ -259,10 +259,19 @@ input[name="produto"]:checked+label, .Checked+label {
 .it {
     background-color: white;
     width: 21.04%;
-    height: 350px;
+    height: 400px;
     margin: 1%;
     padding: 10px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.it h4 {
+    margin-left: 1%;
+    width: 30%;
+    text-align: center;
+    border: 1px solid var(--color-third);
+    border-radius: 30px;
+    color: var(--color-third);
 }
 
 .img {
@@ -325,7 +334,7 @@ article h2 {
     font-size: 45px;
 }
 
-#sobre-nos #sn-div {
+#sn-div {
     justify-content: center;
     display: flex;
     align-content: center;
@@ -336,19 +345,21 @@ article h2 {
     width: 50%;
 }
 
-#sobre-nos img {
-    width: 45%;
+#sn-div img {
+    width: 700px;
 }
 
-#sv1, #sv2 {
-    background-color: #013C31;
-    color:  white;
+#servicos {
+    padding: 30px;
+    font-size: 21px;
+}
+
+#sv1, #sv2, #sv3 {
     display: flex;
     align-items: center;
-    padding: 30px;
 }
 
-#sv1 img{
+#sv1 img #sv3 img{
     float: left;
     display: inline;
 }
@@ -376,6 +387,11 @@ footer ul {
     font-size: 20px;
     color: rgb(223, 223, 223);
     font-family: var(--font);
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFBE4;
 }
 
 .contato {
