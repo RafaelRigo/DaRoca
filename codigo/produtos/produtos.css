@@ -8,6 +8,10 @@
     --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 header {
     display: flex;
     height: 80px;

@@ -2,6 +2,10 @@ html {
     background-color: #013c31;
 }
 
+body {
+    margin: 0;
+}
+
 img {
     display: flex;
     width: 130px;   
