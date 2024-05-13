@@ -114,14 +114,15 @@
 
     <script>
         function buscar(){
-            window.location.href = 'produtos/produtos.html';
             let prod = document.getElementById('txt-buscar').value
+            window.location.href = 'produtos/produtos.html?input=' + encodeURIComponent(prod);
         }
         document.getElementById("txt-buscar").addEventListener("keypress", function(event) {
             // Verificar se a tecla pressionada é Enter (código 13)
             if (event.key === "Enter") {
                 // Redirecionar para o site desejado
-                window.location.href = "produtos/produtos.html";
+                let prod = document.getElementById('txt-buscar').value
+                window.location.href = 'produtos/produtos.html?input=' + encodeURIComponent(prod);
                 }
         });
     </script>
