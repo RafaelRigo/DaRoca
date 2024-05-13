@@ -344,13 +344,15 @@ article h2 {
     align-content: center;
 }
 
-#sobre-nos #paragrafos-sn{
+#paragrafos-sn {
     font-size: 21px;
     width: 50%;
+    margin-right: 15px;
 }
 
 #sn-div img {
     width: 700px;
+
 }
 
 #servicos {
