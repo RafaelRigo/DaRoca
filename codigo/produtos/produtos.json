@@ -1,0 +1,62 @@
+{
+    "Banana nanica": {
+        "categoria": "fruta",
+        "imagem": "../../imagens/banana.jpg",
+        "quantidade": "300g",
+        "preço": "10.00"
+    },
+    "Cereja": {
+        "categoria": "fruta",
+        "imagem": "../../imagens/cerejas.jpg",
+        "quantidade": "100g",
+        "preço": "7.00"
+    },
+    "Batata inglesa": {
+        "categoria": "legume",
+        "imagem": "../..//batata.webp",
+        "quantidade": "100g",
+        "preço": "14.00"
+    },
+    "Batata doce": {
+        "categoria": "legume",
+        "imagem": "../../imagens/baimagenstata-doce.jpg",
+        "quantidade": "200g",
+        "preço": "16.00"
+    },
+    "Abobrinha": {
+        "categoria": "legume",
+        "imagem": "../../imagens/abobrinha.jpg",
+        "quantidade": "100g",
+        "preço": "8.00"
+    },
+    "Tomate italiano": {
+        "categoria": "fruta",
+        "imagem": "../../imagens/tomate.webp",
+        "quantidade": "50g",
+        "preço": "10.00"
+    },
+    "Abacaxi": {
+        "categoria": "fruta",
+        "imagem": "../../imagens/abacaxi.jpg",
+        "quantidade": "1 unidade",
+        "preço": "20.00"
+    },
+    "Alface italiana": {
+        "categoria": "verdura",
+        "imagem": "../../imagens/alface-italiana.jpg",
+        "quantidade": "100g",
+        "preço": "5.00"
+    },
+    "Brócolis japonês": {
+        "categoria": "verdura",
+        "imagem": "../../imagens/brocolis-japones.webp",
+        "quantidade": "200g",
+        "preço": "9.00"
+    },
+    "Pepino caipira": {
+        "categoria": "verdura",
+        "imagem": "../../imagens/pepino-caipira.jfif",
+        "quantidade": "100g",
+        "preço": "6.00"
+    }
+}
