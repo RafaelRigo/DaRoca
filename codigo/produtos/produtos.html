@@ -6,6 +6,7 @@
     <title>Da Roça - Produtos</title>
     <link rel="stylesheet" href="produtos.css">
     <script src="produtos.js"></script>
+    <script src="https://kit.fontawesome.com/e1536dd363.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -44,38 +45,79 @@
                 <label for="legume">Legumes</label>
             </li>
         </ul>
-        <div id="mercadoria">
+        <div id="mercadoria" onload="produtos('mercadoria')">
             <div class="it frutas"><img class="img" src="../../imagens/banana.jpg"><div class="info"><h2>Banana nanica - 300g</h2>
                 <h4>Fruta</h4>
-                <h3>R$ 10,00</h3><button class="qtd" onclick="somar('cont')">+</button><p class="cont">1</p><button class="qtd" onclick="sub('cont')">-</button><button class="add" onclick="reset()">Adicionar</button></div></div>
+                <h3>R$ 10,00</h3><button class="qtd" onclick="somar('cont')">+</button><p class="cont">1</p><button class="qtd" onclick="sub('cont')">-</button><button class="add" onclick="reset()"><i class="fa-regular fa-cart-shopping"></i></button></div></div>
             <div class="it frutas"><img class="img" src="../../imagens/cerejas.jpg"><div class="info"><h2>Cereja - 100g</h2>
                 <h4>Fruta</h4>
-                <h3>R$ 7,00</h3><button class="qtd" onclick="somar('cont1')">+</button><p class="cont1">1</p><button class="qtd" onclick="sub('cont1')">-</button><button class="add" onclick="reset()">Adicionar</button></div></div>
+                <h3>R$ 7,00</h3><button class="qtd" onclick="somar('cont1')">+</button><p class="cont1">1</p><button class="qtd" onclick="sub('cont1')">-</button><button class="add" onclick="reset()"><i class="fa-regular fa-cart-shopping"></i></button></div></div>
             <div class="it legumes"><img class="img" src="../../imagens/batata.webp"><div class="info"><h2>Batata inglesa - 100g</h2>
                 <h4>Legume</h4>
-                <h3>R$ 14,00</h3><button class="qtd" onclick="somar('cont2')">+</button><p class="cont2">1</p><button class="qtd" onclick="sub('cont2')">-</button><button class="add" onclick="reset()">Adicionar</button></div></div>
+                <h3>R$ 14,00</h3><button class="qtd" onclick="somar('cont2')">+</button><p class="cont2">1</p><button class="qtd" onclick="sub('cont2')">-</button><button class="add" onclick="reset()"><i class="fa-regular fa-cart-shopping"></i></button></div></div>
             <div class="it legumes"><img class="img" src="../../imagens/batata-doce.jpg"><div class="info"><h2>Batata doce - 200g</h2>
                 <h4>Legume</h4>
-                <h3>R$ 16,00</h3><button class="qtd" onclick="somar('cont3')">+</button><p class="cont3">1</p><button class="qtd" onclick="sub('cont3')">-</button><button class="add" onclick="reset()">Adicionar</button></div></div>
+                <h3>R$ 16,00</h3><button class="qtd" onclick="somar('cont3')">+</button><p class="cont3">1</p><button class="qtd" onclick="sub('cont3')">-</button><button class="add" onclick="reset()"><i class="fa-regular fa-cart-shopping"></i></button></div></div>
             <div class="it legumes"><img class="img" src="../../imagens/abobrinha.jpg"><div class="info"><h2>Abobrinha - 100g</h2>
                 <h4>Legume</h4>
-                <h3>R$ 8,00</h3><button class="qtd" onclick="somar('cont4')">+</button><p class="cont4">1</p><button class="qtd" onclick="sub('cont4')">-</button><button class="add" onclick="reset()">Adicionar</button></div></div>
+                <h3>R$ 8,00</h3><button class="qtd" onclick="somar('cont4')">+</button><p class="cont4">1</p><button class="qtd" onclick="sub('cont4')">-</button><button class="add" onclick="reset()"><i class="fa-regular fa-cart-shopping"></i></button></div></div>
             <div class="it frutas"><img class="img" src="../../imagens/tomate.webp"><div class="info"><h2>Tomate italiano - 50g</h2>
                 <h4>Fruta</h4>
-                <h3>R$ 10,00</h3><button class="qtd" onclick="somar('cont5')">+</button><p class="cont5">1</p><button class="qtd" onclick="sub('cont5')">-</button><button class="add" onclick="reset()">Adicionar</button></div></div>
+                <h3>R$ 10,00</h3><button class="qtd" onclick="somar('cont5')">+</button><p class="cont5">1</p><button class="qtd" onclick="sub('cont5')">-</button><button class="add" onclick="reset()"><i class="fa-regular fa-cart-shopping"></i></button></div></div>
             <div class="it frutas"><img class="img" src="../../imagens/abacaxi.jpg"><div class="info"><h2>Abacaxi - 1 unidade</h2>
                 <h4>Fruta</h4>
-                <h3>R$ 20,00</h3><button class="qtd" onclick="somar('cont6')">+</button><p class="cont6">1</p><button class="qtd" onclick="sub('cont6')">-</button><button class="add" onclick="reset()">Adicionar</button></div></div>
+                <h3>R$ 20,00</h3><button class="qtd" onclick="somar('cont6')">+</button><p class="cont6">1</p><button class="qtd" onclick="sub('cont6')">-</button><button class="add" onclick="reset()"><i class="fa-regular fa-cart-shopping"></i></button></div></div>
             <div class="it verduras"><img class="img" src="../../imagens/alface-italiana.jpg"><div class="info"><h2>Alface italiana</h2>
                 <h4>Verdura</h4>
-                <h3>R$ 5,00</h3><button class="qtd" onclick="somar('cont7')">+</button><p class="cont7">1</p><button class="qtd" onclick="sub('cont7')">-</button><button class="add" onclick="reset()">Adicionar</button></div></div>
+                <h3>R$ 5,00</h3><button class="qtd" onclick="somar('cont7')">+</button><p class="cont7">1</p><button class="qtd" onclick="sub('cont7')">-</button><button class="add" onclick="reset()"><i class="fa-regular fa-cart-shopping"></i></button></div></div>
             <div class="it verduras"><img class="img" src="../../imagens/brocolis-japones.webp"><div class="info"><h2>Brócolis japonês</h2>
                 <h4>Verdura</h4>
-                <h3>R$ 9,00</h3><button class="qtd" onclick="somar('cont8')">+</button><p class="cont8">1</p><button class="qtd" onclick="sub('cont8')">-</button><button class="add" onclick="reset()">Adicionar</button></div></div>
+                <h3>R$ 9,00</h3><button class="qtd" onclick="somar('cont8')">+</button><p class="cont8">1</p><button class="qtd" onclick="sub('cont8')">-</button><button class="add" onclick="reset()"><i class="fa-regular fa-cart-shopping"></i></button></div></div>
             <div class="it verduras"><img class="img" src="../../imagens/pepino-caipira.jfif"><div class="info"><h2>Pepino caipira</h2>
                 <h4>Verdura</h4>
-                <h3>R$ 6,00</h3><button class="qtd" onclick="somar('cont9')">+</button><p class="cont9">1</p><button class="qtd" onclick="sub('cont9')">-</button><button class="add" onclick="reset()">Adicionar</button></div></div>
+                <h3>R$ 6,00</h3><button class="qtd" onclick="somar('cont9')">+</button><p class="cont9">1</p><button class="qtd" onclick="sub('cont9')">-</button><button class="add" onclick="reset()"><i class="fa-regular fa-cart-shopping"></i></button></div></div>
         </div>
     </main>
+    <script>
+        var c = 1
+        function reset(){
+            c = 1
+        }
+
+        function somar(classe){
+            c += 1
+            document.querySelector('.'+classe).innerHTML = c
+        }
+
+        function sub(classe){
+            if (c > 1){
+                c -= 1
+            }
+            document.querySelector('.'+classe).innerHTML = c
+        }
+        window.onload = function() {
+            var urlParams = new URLSearchParams(window.location.search)
+            var valorInput = urlParams.get('input')
+            document.getElementById('txt-buscar').value = valorInput;
+        }
+
+        function filtro() {           
+            let classes = ['fruta', 'legume', 'verdura'];
+
+            for (var alimento of classes) {
+                var al = document.querySelectorAll('.' + classes[alimento] + 's');
+                if (document.querySelector('#' + classes[alimento]).checked === false) {
+                    for (var i of al) {
+                        al[i].style.display = 'none';
+                    }
+                } else {
+                    for (var j of al) {
+                        al[j].style.display = 'block';
+                    }
+                }
+            }
+        }
+
+    </script>
 </body>
 </html>
