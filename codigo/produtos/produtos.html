@@ -6,8 +6,10 @@
     <title>Da Roça - Produtos</title>
     <link rel="stylesheet" href="produtos.css">
     <script src="../main.js"></script>
+    <script src="produtos.json"></script>
+    <script src="produtos.js"></script>
 </head>
-<body>
+<body onload="url(); carregarProdutos()">
     <header>
         <nav>
             <ul id="menu">
@@ -77,46 +79,5 @@
                 <h3>R$ 6,00</h3><button class="qtd" onclick="somar('cont9')">+</button><p class="cont9">1</p><button class="qtd" onclick="sub('cont9')">-</button><button class="add" onclick="reset()">adicionar</button></div></div>
         </div>
     </main>
-    <script>
-        var c = 1
-        function reset(){
-            c = 1
-        }
-
-        function somar(classe){
-            c += 1
-            document.querySelector('.'+classe).innerHTML = c
-        }
-
-        function sub(classe){
-            if (c > 1){
-                c -= 1
-            }
-            document.querySelector('.'+classe).innerHTML = c
-        }
-        window.onload = function() {
-            var urlParams = new URLSearchParams(window.location.search)
-            var valorInput = urlParams.get('input')
-            document.getElementById('txt-buscar').value = valorInput;
-        }
-
-        function filtro() {           
-            let classes = ['fruta', 'legume', 'verdura'];
-
-            for (var alimento = 0; alimento < classes.length; alimento++) {
-                var al = document.querySelectorAll('.' + classes[alimento] + 's');
-                if (document.querySelector('#' + classes[alimento]).checked === false) {
-                    for (var i = 0; i < al.length; i++) {
-                        al[i].style.display = 'none';
-                    }
-                } else {
-                    for (var i = 0; i < al.length; i++) {
-                        al[i].style.display = 'block';
-                    }
-                }
-            }
-        }
-
-    </script>
 </body>
 </html>
