@@ -52,12 +52,17 @@ const carregarProdutos = () => {
                 <div class="it ${produto["categoria"]}s">
                 <img class="img" src="${produto["imagem"]}">
                 <div class="info">
+                
                 <h2>${produto["nome"]} - ${produto["quantidade"]}</h2>
+
                 <h4>${produto["categoria"].charAt().toUpperCase() + produto["categoria"].slice(1)}</h4>
-                <h3>R$ 10,00</h3>
+
+                <h3>R$ ${produto["preco"].toFixed(2).toString().replace(".", ",")}</h3>
+
                 <button class="qtd" onclick="somar('cont${produtos["id"]}')">+</button>
                 <p class="cont${produtos["id"]}">1</p>
                 <button class="qtd" onclick="sub('cont${produtos["id"]}')">-</button>
+
                 <button class="add" onclick="reset()">adicionar</button>
                 </div></div>
                 `
