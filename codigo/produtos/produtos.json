@@ -1,82 +1,98 @@
 [
     {
-      "id": 1,
-      "nome": "Banana nanica",
-      "categoria": "fruta",
-      "preco": 10.00,
-      "quantidade": "300g",
-      "imagem": "../../imagens/banana.jpg"
+        "id": 1,
+        "nome": "Banana nanica",
+        "categoria": "fruta",
+        "preco": 10.0,
+        "quantidade": "300g",
+        "imagem": "../../imagens/banana.jpg"
     },
     {
-      "id": 2,
-      "nome": "Cereja",
-      "categoria": "fruta",
-      "preco": 7.00,
-      "quantidade": "100g",
-      "imagem": "../../imagens/cerejas.jpg"
+        "id": 2,
+        "nome": "Cereja",
+        "categoria": "fruta",
+        "preco": 7.0,
+        "quantidade": "100g",
+        "imagem": "../../imagens/cerejas.jpg"
     },
     {
-      "id": 3,
-      "nome": "Batata inglesa",
-      "categoria": "legume",
-      "preco": 14.00,
-      "quantidade": "100g",
-      "imagem": "../../imagens/batata.webp"
+        "id": 3,
+        "nome": "Batata inglesa",
+        "categoria": "legume",
+        "preco": 14.0,
+        "quantidade": "100g",
+        "imagem": "../../imagens/batata.webp"
     },
     {
-      "id": 4,
-      "nome": "Batata doce",
-      "categoria": "legume",
-      "preco": 16.00,
-      "quantidade": "200g",
-      "imagem": "../../imagens/batata-doce.jpg"
+        "id": 4,
+        "nome": "Batata doce",
+        "categoria": "legume",
+        "preco": 16.0,
+        "quantidade": "200g",
+        "imagem": "../../imagens/batata-doce.jpg"
     },
     {
-      "id": 5,
-      "nome": "Abobrinha",
-      "categoria": "legume",
-      "preco": 8.00,
-      "quantidade": "100g",
-      "imagem": "../../imagens/abobrinha.jpg"
+        "id": 5,
+        "nome": "Abobrinha",
+        "categoria": "legume",
+        "preco": 8.0,
+        "quantidade": "100g",
+        "imagem": "../../imagens/abobrinha.jpg"
     },
     {
-      "id": 6,
-      "nome": "Tomate italiano",
-      "categoria": "fruta",
-      "preco": 10.00,
-      "quantidade": "50g",
-      "imagem": "../../imagens/tomate.webp"
+        "id": 6,
+        "nome": "Tomate italiano",
+        "categoria": "fruta",
+        "preco": 10.0,
+        "quantidade": "50g",
+        "imagem": "../../imagens/tomate.webp"
     },
     {
-      "id": 7,
-      "nome": "Abacaxi",
-      "categoria": "fruta",
-      "preco": 20.00,
-      "quantidade": "1 unidade",
-      "imagem": "../../imagens/abacaxi.jpg"
+        "id": 7,
+        "nome": "Abacaxi",
+        "categoria": "fruta",
+        "preco": 20.0,
+        "quantidade": "1 unidade",
+        "imagem": "../../imagens/abacaxi.jpg"
     },
     {
-      "id": 8,
-      "nome": "Alface italiana",
-      "categoria": "verdura",
-      "preco": 5.00,
-      "quantidade": "100g",
-      "imagem": "../../imagens/alface-italiana.jpg"
+        "id": 8,
+        "nome": "Alface italiana",
+        "categoria": "verdura",
+        "preco": 5.0,
+        "quantidade": "100g",
+        "imagem": "../../imagens/alface-italiana.jpg"
     },
     {
-      "id": 9,
-      "nome": "Brócolis japonês",
-      "categoria": "verdura",
-      "preco": 9.00,
-      "quantidade": "150g",
-      "imagem": "../../imagens/brocolis-japones.webp"
+        "id": 9,
+        "nome": "Br\u00f3colis japon\u00eas",
+        "categoria": "verdura",
+        "preco": 9.0,
+        "quantidade": "150g",
+        "imagem": "../../imagens/brocolis-japones.webp"
     },
     {
-      "id": 10,
-      "nome": "Pepino caipira",
-      "categoria": "verdura",
-      "preco": 6.50,
-      "quantidade": "50g",
-      "imagem": "../../imagens/pepino-caipira.jfif"
+        "id": 10,
+        "nome": "Pepino caipira",
+        "categoria": "verdura",
+        "preco": 6.5,
+        "quantidade": "50g",
+        "imagem": "../../imagens/pepino-caipira.jfif"
+    },
+    {
+        "id": 11,
+        "nome": "Ma\u00e7\u00e3",
+        "categoria": "fruta",
+        "preco": 10.0,
+        "quantidade": "200g",
+        "imagem": "../../imagens/maca.jpg"
+    },
+    {
+        "id": 12,
+        "nome": "Melancia",
+        "categoria": "fruta",
+        "preco": 20.0,
+        "quantidade": "5kg",
+        "imagem": "../../imagens/melancia.jpg"
     }
-  ]
+]
