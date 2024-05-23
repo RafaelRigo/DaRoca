@@ -59,9 +59,9 @@ const carregarProdutos = () => {
 
                 <h3>R$ ${produto["preco"].toFixed(2).toString().replace(".", ",")}</h3>
 
-                <button class="qtd" onclick="somar('cont${produtos["id"]}')">+</button>
-                <p class="cont${produtos["id"]}">1</p>
-                <button class="qtd" onclick="sub('cont${produtos["id"]}')">-</button>
+                <button class="qtd" onclick="somar('cont${produto["id"]}')">+</button>
+                <p class="cont${produto["id"]}">1</p>
+                <button class="qtd" onclick="sub('cont${produto["id"]}')">-</button>
 
                 <button class="add" onclick="reset()">adicionar</button>
                 </div></div>
