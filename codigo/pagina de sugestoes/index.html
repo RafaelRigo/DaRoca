@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="../../codigo/index.html"><img src="../../imagens/logoDaRoca.png"><img src="../../imagens/logo_texto.png" style="margin-top: 15px;"></a>
+    </header>
+
+    <main>
+        <form>
+            
+            <h1 style="padding-top: 20px;">Suporte</h1>
+            <div id="rside">
+                <label style="display: block;">Email:</label>
+                <input type="email" style="margin-bottom: 0px;">
+                <p style="margin: 10px 0px 0px 5px; color: #FFC850">Avalie a nossa empresa: </p>
+
+                <div id="opc">
+                    <ul>
+                        <li><input type="radio" name="estrela" id="s1"><img id= "stars1" onclick=" avaliar(1)" src="../../imagens/star_not_selected.png"></li>
+                        <li><input type="radio" name="estrela" id="s2"><img id= "stars2" onclick=" avaliar(2)" src="../../imagens/star_not_selected.png"></li>
+                        <li><input type="radio" name="estrela" id="s3"><img id= "stars3" onclick=" avaliar(3)" src="../../imagens/star_not_selected.png"></li>
+                        <li><input type="radio" name="estrela" id="s4"><img id= "stars4" onclick=" avaliar(4)" src="../../imagens/star_not_selected.png"></li>
+                        <li><input type='radio' name="estrela" id="s5"><img id= "stars5" onclick=" avaliar(5)" src="../../imagens/star_not_selected.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="lside">
+                <label style="display: block;">Comentário:</label>
+                <textarea cols="49%" rows="5" style="height: 120px; margin-bottom: 40px;" ></textarea>   
+            </div>
+            <button>Enviar</button>
+        </form>
+    </main>
+    <script>
+        
+        function avaliar(num){
+            for (i = 1; i < 6; i++){
+                if (i <= num){
+                    document.querySelector('#stars'+i).src = '../../imagens/star_selected.png'
+                } else {
+                    document.querySelector('#stars'+i).src = "../../imagens/star_not_selected.png"
+                }
+            }
+
+            
+        }
+
+    </script>
+</body>
+</html>

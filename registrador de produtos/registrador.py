@@ -27,7 +27,7 @@ class FormPrincipal(QMainWindow, Ui_janelaPrincipal):
                          ('Qualquer arquivo', '*.*') )
         nome_arq = filedialog.askopenfilename(
             title='Selecione a imagem',
-            initialdir=r'../imagens',
+            initialdir=r'Z:\1º ano - Cotuca\Pratica Profissional\DaRoça\DaRoca\imagens',
             filetypes=tipos_de_arq
         )
         

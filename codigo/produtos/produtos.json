@@ -94,5 +94,13 @@
         "preco": 20.0,
         "quantidade": "5kg",
         "imagem": "../../imagens/melancia.jpg"
+    },
+    {
+        "id": 14,
+        "nome": "kiwi",
+        "categoria": "fruta",
+        "preco": 0.0,
+        "quantidade": "100g",
+        "imagem": "../../imagens/kiwi.jpg"
     }
 ]
