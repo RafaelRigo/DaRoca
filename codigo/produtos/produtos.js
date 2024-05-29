@@ -39,7 +39,7 @@ function filtro() {
 }
 
 const carregarProdutos = () => {
-    fetch('produtos.json')
+    fetch('http://localhost:3000/produtos')
         .then(response => response.json())
         .then(data => {
 
@@ -53,11 +53,11 @@ const carregarProdutos = () => {
                 <img class="img" src="${produto["imagem"]}">
                 <div class="info">
                 
-                <h2>${produto["nome"]} - ${produto["quantidade"]}</h2>
+                <h2>${produto["nome"]} - ${produto["descricao"]}</h2>
 
                 <h4>${produto["categoria"].charAt().toUpperCase() + produto["categoria"].slice(1)}</h4>
 
-                <h3>R$ ${produto["preco"].toFixed(2).toString().replace(".", ",")}</h3>
+                <h3>R$ ${produto["valor"].toFixed(2).toString().replace(".", ",")}</h3>
 
                 <button class="qtd" onclick="somar('cont${produto["id"]}')">+</button>
                 <p class="cont${produto["id"]}">1</p>
