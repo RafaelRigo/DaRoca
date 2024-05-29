@@ -4,6 +4,9 @@ from PySide6.QtCore import Qt, QtMsgType
 from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QStatusBar, QDialog
 from registro_produtos_ui import Ui_janelaPrincipal
 from tkinter import filedialog
+import pyodbc as bd
+
+global conexao, cursor
 
 class FormPrincipal(QMainWindow, Ui_janelaPrincipal):
     def __init__(self) -> None:
@@ -34,38 +37,41 @@ class FormPrincipal(QMainWindow, Ui_janelaPrincipal):
         dir_list = nome_arq.split("/")
         caminho = f"../../{dir_list[-2]}/{dir_list[-1]}"
         
-        imagem = caminho
+        imagem = f"'{caminho}'"
 
     def registrar_produto(self):
-        with open("codigo/produtos/produtos.json", encoding='utf-8') as f:
-            json_produtos = json.load(f)
-        
-        maior_id = 0
-        for produto in json_produtos:
-            if int(produto["id"]) > maior_id:
-                maior_id = produto["id"]
-        
-        id = maior_id + 1
-        nome = self.nomeProduto.text()
-        categoria = self.categoriaProduto.currentText()
-        preco = self.precoProduto.value()
-        quantidade = self.quantidadeProduto.text()
+        nome = f"'{self.nomeProduto.text()}'"
+        categoria = f"'{self.categoriaProduto.currentText()}'"
+        preco = f"'{self.precoProduto.value()}'"
+        quantidade = f"'{self.quantidadeProduto.text()}'"
 
-        obj = {
-            "id": id,
-            "nome": nome,
-            "categoria": categoria,
-            "preco": preco,
-            "quantidade": quantidade,
-            "imagem": imagem
-        }
+        if nome == "" or categoria == "" or preco == 0 or quantidade == "":
+            self.statusBar.showMessage("Preencha todos os campos", 5000)
+            return
 
-        json_produtos.append(obj)
-        json_produtos = json.dumps( json_produtos, indent=4)
+        comando = f"INSERT INTO daroca.produtos (nome, categoria, valor, descricao, imagem) VALUES ({nome}, {categoria}, {preco}, {quantidade}, {imagem})"
 
-        with open("codigo/produtos/produtos.json", "w", encoding='utf-8') as f:
-            f.write(json_produtos)
+        try:
+            cursor.execute(comando)
+            conexao.commit()
+            self.statusBar.showMessage("Produto registrado com sucesso", 5000)
+        except Exception as e:
+            if hasattr(e, 'message'):
+                mensagem = e.message
+            else:
+                mensagem = e.args[1]
+            self.statusBar.showMessage(mensagem)
 
 application = QApplication(sys.argv)
-janela = FormPrincipal()
-application.exec()
+try:
+    conexao = bd.connect(driver="SQL Server",
+                        server="regulus.cotuca.unicamp.br",
+                        database="BD24159",
+                        uid="BD24159",
+                        pwd="BD24159")
+    print("Conexão bem sucedida!")
+    cursor = conexao.cursor()  # cursor: objeto de acesso ao BD
+    janela = FormPrincipal()
+    application.exec()
+except:
+    print("Não foi possível conectar ao banco de dados")
