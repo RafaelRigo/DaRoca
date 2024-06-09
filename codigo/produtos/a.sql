@@ -1,1 +1,0 @@
-update daroca.produtos set imagem = '../../imagens/batata.webp' where id = 1;
