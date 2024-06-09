@@ -133,11 +133,30 @@ nav {
     color: var(--color-black-second);
 }
 
-main {
+#conteudo {
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
 }
+
+#legenda {
+    width: 60%;
+    display: flex;
+    margin-left: 55px;
+    justify-content: space-around;
+    padding: 0px;
+    font-family: var(--font);
+    margin-bottom: -10px;
+}
+
+#legenda h2 {
+    margin: 40px 0px 0px 0px;
+}
+
+#vz {
+    width: 180px;
+}
+
 
 #box {
     width: 60%;
@@ -149,6 +168,7 @@ main {
     flex-wrap: wrap;
     overflow: auto;
     font-family: var(--font);
+    border: 2px solid rgb(223, 223, 223);
 }
 
 #box img {
