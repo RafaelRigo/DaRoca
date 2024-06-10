@@ -133,6 +133,12 @@ nav {
     color: var(--color-black-second);
 }
 
+#carrinho {
+    img {
+        height: 70px;
+    }
+}
+
 main {
     color: #3A4042;
 }
