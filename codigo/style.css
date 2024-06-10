@@ -313,18 +313,6 @@ input[name="produto"]:checked+label, .Checked+label {
     background-color: #013C31;
 }
 
-.qtd {
-    border-radius: 200px;
-    width: 25px;
-    height: 25px;
-    font-family: var(--font);
-    font-weight: bolder;
-    font-size: 16px;
-    border: none;
-    background-color: rgb(207, 207, 207);
-    margin: 2px 5px;
-}
-
 .info p{
     display: inline;
     font-size: 20px;
