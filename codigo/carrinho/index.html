@@ -125,23 +125,35 @@
             
             </div>
             <div id="comprar">
-                <label>Selecione a freqência de entregas: </label>
-                <select>
-                    <option value="">apenas uma vez</option>
-                    <option value="">diario</option>
-                    <option value="">semanal</option>
-                    <option value="">mensal</option>
-                    <option value="">bimestral</option>
-                    <option value="">trimestral</option>
-                </select>
+            
+                <div class="opt">
+                    <label style="font-size: 25px; font-weight: bold;">Selecione a freqência de entregas: </label>
+                    <select style="width: 90%; font-size: 16px;">
+                        <option value="">apenas uma vez</option>
+                        <option value="">diario</option>
+                        <option value="">semanal</option>
+                        <option value="">mensal</option>
+                        <option value="">bimestral</option>
+                        <option value="">trimestral</option>
+                    </select>
+                </div>
                 
-                <h2>ENTREGA</h2>
-                <label>Insira o CEP para calcular o valor e prazo: </label>
-                <input type='number'>
-                <button>ok</button>
+                <div class="opt">
+                    <h2>ENTREGA</h2>
+                    <label style="font-size: 20px; margin-bottom: 5px;">Insira o CEP para calcular o valor e prazo: </label>
+                    <input type='number'>
+                    <button>ok</button>
+                </div>
 
-                <h2>total:  </h2>
+                <div class="opt">
+                    <h2>subtotal:  34,00</h2>
+                    <h2>frete: --</h2>
+                    <h2>total: 34,00</h2>
+                </div>
 
+                <div style="width: 85%; margin: auto;">
+                    <button id="bt-comp">comprar</button>
+                </div>
             </div>
         </div>
     </main>
